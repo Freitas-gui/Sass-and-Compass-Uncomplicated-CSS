@@ -27,7 +27,7 @@ h2 {
 
 /** Header **/
 header {
-  border-top: 5px solid red;
+  border-top: 5px solid #c24e4b;
   background: rgba(30, 44, 53, 0.8);
   height: 90px;
   width: 100%;
@@ -91,12 +91,14 @@ header .container {
 
 .destaque button {
   margin-top: 1em;
-  background: red;
+  background: #c24e4b;
   border: 0;
   padding: 0.6em;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   font-weight: bold;
 }
@@ -162,7 +164,7 @@ header .container {
 }
 
 .planos h2 {
-  color: #fff;
+  color: #FFF;
 }
 
 .plano {
@@ -178,9 +180,9 @@ header .container {
 }
 
 .plano h3 {
-  color: #fff;
+  color: #FFF;
   font-size: 1.8em;
-  background: red;
+  background: #c24e4b;
   text-align: center;
   height: 2em;
   padding-top: 0.6em;
@@ -189,7 +191,7 @@ header .container {
 
 .plano div {
   text-align: center;
-  color: red;
+  color: #c24e4b;
   font-size: 2.75em;
 }
 
@@ -214,14 +216,16 @@ header .container {
 }
 
 .plano button {
-  background: red;
+  background: #c24e4b;
   border: 0;
-  color: #fff;
+  color: #FFF;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
   -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
   border-radius: 0.3em;
+  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   margin-left: 2em;
 }
@@ -304,20 +308,23 @@ textarea {
   margin-bottom: 0.8em;
   padding: 4px 8px;
   -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
   border-radius: 0.3em;
   border: 2px solid #ccc;
 }
 
 .contato button {
   margin: 0 auto;
-  background: red;
+  background: #c24e4b;
   border: 0;
-  color: #fff;
+  color: #FFF;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
   -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
   border-radius: 0.3em;
+  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
 }
 
@@ -386,7 +393,7 @@ footer .container img {
 }
 
 footer a {
-  color: #fff;
+  color: #FFF;
   text-decoration: none;
 }
 
