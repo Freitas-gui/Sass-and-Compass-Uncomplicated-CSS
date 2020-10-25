@@ -1,3 +1,15 @@
+@import './base/normalize.css';
+.contato button, .plano button, .destaque button {
+  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+}
+
+.social li a, .plataformas li {
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
 /** Geral **/
 body {
   font-family: "Roboto Slab", serif;
@@ -6,6 +18,11 @@ body {
 .container {
   width: 940px;
   margin: 0 auto;
+}
+@media (max-width: 980px) {
+  .container {
+    width: 90%;
+  }
 }
 
 .titulo-secao {
@@ -27,41 +44,66 @@ h2 {
 
 /** Header **/
 header {
-  border-top: 5px solid #c24e4b;
+  border-top: 5px solid #a33a37;
   background: rgba(30, 44, 53, 0.8);
   height: 90px;
   width: 100%;
   position: absolute;
+}
+@media (max-width: 980px) {
+  header {
+    height: auto;
+  }
+  header .container {
+    position: static;
+  }
+  header h1 {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  header h1 img {
+    max-width: 100%;
+    margin: 0.5em auto;
+    display: block;
+  }
 }
 
 header .container {
   position: relative;
 }
 
-.menu-opcoes {
+.menu-principal {
   position: absolute;
   right: 0;
   top: -0.5em;
   font-size: 1.2em;
   font-weight: lighter;
 }
-
-.menu-opcoes ul {
+.menu-principal ul {
   padding-left: 0;
 }
-
-.menu-opcoes li {
+.menu-principal li {
   display: inline-block;
   width: 5em;
 }
-
-.menu-opcoes a {
+.menu-principal a {
   color: white;
   text-decoration: none;
 }
-
-.menu-opcoes a:hover {
+.menu-principal a:hover {
   text-decoration: underline;
+}
+@media (max-width: 980px) {
+  .menu-principal {
+    position: static;
+    display: block;
+    text-align: center;
+    width: auto;
+  }
+  .menu-principal li {
+    margin: 0.4em;
+    width: auto;
+  }
 }
 
 /** Destaque **/
@@ -72,6 +114,12 @@ header .container {
   color: white;
   height: 330px;
   padding-top: 10em;
+}
+@media (max-width: 980px) {
+  .destaque {
+    font-size: 14px;
+    height: 250px;
+  }
 }
 
 .destaque p {
@@ -91,15 +139,13 @@ header .container {
 
 .destaque button {
   margin-top: 1em;
-  background: #c24e4b;
+  background: #a33a37;
   border: 0;
   padding: 0.6em;
   font-size: 1.2em;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
-  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   font-weight: bold;
 }
 
@@ -135,9 +181,6 @@ header .container {
   display: inline-block;
   width: 50px;
   height: 60px;
-  text-indent: -9999px;
-  overflow: hidden;
-  background-repeat: no-repeat;
   background-position: center;
   margin: 1em 1.5em 0 0;
 }
@@ -160,7 +203,7 @@ header .container {
 
 /** Planos **/
 .planos {
-  background: #1e2c35;
+  background: #304756;
 }
 
 .planos h2 {
@@ -182,7 +225,7 @@ header .container {
 .plano h3 {
   color: #FFF;
   font-size: 1.8em;
-  background: #c24e4b;
+  background: #a33a37;
   text-align: center;
   height: 2em;
   padding-top: 0.6em;
@@ -191,14 +234,13 @@ header .container {
 
 .plano div {
   text-align: center;
-  color: #c24e4b;
+  color: #a33a37;
   font-size: 2.75em;
 }
 
 .itens-plano {
   padding-left: 1.2em;
 }
-
 .itens-plano li {
   font-size: 1em;
   list-style: none;
@@ -206,17 +248,15 @@ header .container {
   padding: 0.5em;
   width: 14.8em;
 }
-
 .itens-plano li:last-child {
   border: 0;
 }
-
 .itens-plano span {
   float: right;
 }
 
 .plano button {
-  background: #c24e4b;
+  background: #a33a37;
   border: 0;
   color: #FFF;
   width: 210px;
@@ -225,8 +265,6 @@ header .container {
   -webkit-border-radius: 0.3em;
   -moz-border-radius: 0.3em;
   border-radius: 0.3em;
-  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   margin-left: 2em;
 }
 
@@ -269,6 +307,14 @@ header .container {
   display: inline-block;
   vertical-align: top;
 }
+@media (max-width: 980px) {
+  .post-destaque .post-destaque,
+.post-destaque .posts-antigos,
+.posts-antigos .post-destaque,
+.posts-antigos .posts-antigos {
+    width: auto;
+  }
+}
 
 .post-destaque {
   margin-right: 2em;
@@ -301,6 +347,11 @@ form {
   margin: 0 auto;
   width: 50%;
 }
+@media (max-width: 980px) {
+  form form {
+    width: auto;
+  }
+}
 
 .contato input,
 textarea {
@@ -315,7 +366,7 @@ textarea {
 
 .contato button {
   margin: 0 auto;
-  background: #c24e4b;
+  background: #a33a37;
   border: 0;
   color: #FFF;
   width: 210px;
@@ -324,8 +375,6 @@ textarea {
   -webkit-border-radius: 0.3em;
   -moz-border-radius: 0.3em;
   border-radius: 0.3em;
-  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
 }
 
 /** Footer **/
@@ -348,7 +397,7 @@ footer::after {
 
 footer::before {
   content: "";
-  background: #1e2c35;
+  background: #304756;
   top: 0;
   left: 0;
   bottom: 0;
@@ -405,9 +454,6 @@ footer a {
   display: block;
   width: 55px;
   height: 55px;
-  text-indent: -9999px;
-  overflow: hidden;
-  background-repeat: no-repeat;
   margin-left: 1em;
 }
 
@@ -426,6 +472,16 @@ footer a {
 
 .social a[href*=instagram] {
   background-image: url(../imagens/instagram.png);
+}
+
+@media (max-width: 980px) {
+  .menu-opcoes,
+.menu-opcoes li,
+.post-destaque,
+.posts-antigos,
+form {
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
