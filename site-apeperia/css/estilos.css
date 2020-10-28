@@ -474,14 +474,4 @@ footer a {
   background-image: url(../imagens/instagram.png);
 }
 
-@media (max-width: 980px) {
-  .menu-opcoes,
-.menu-opcoes li,
-.post-destaque,
-.posts-antigos,
-form {
-    width: auto;
-  }
-}
-
 /*# sourceMappingURL=estilos.css.map */
