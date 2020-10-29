@@ -1,36 +1,43 @@
-@import './base/normalize.css';
-.contato button, .plano button, .destaque button {
+@import url(./base/normalize.css);
+/* line 8, helpers/mixins.scss */
+.destaque button, .plano button, .contato button {
   -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
 }
 
-.social li a, .plataformas li {
+/* line 13, helpers/mixins.scss */
+.plataformas li, .social li a {
   text-indent: -9999px;
   overflow: hidden;
   background-repeat: no-repeat;
 }
 
 /** Geral **/
+/* line 3, layout/geral.scss */
 body {
   font-family: "Roboto Slab", serif;
 }
 
+/* line 7, layout/geral.scss */
 .container {
   width: 940px;
   margin: 0 auto;
 }
 @media (max-width: 980px) {
+  /* line 7, layout/geral.scss */
   .container {
     width: 90%;
   }
 }
 
+/* line 16, layout/geral.scss */
 .titulo-secao {
   text-decoration: underline;
   font-size: 2em;
   text-align: center;
 }
 
+/* line 22, layout/geral.scss */
 .sobre,
 .planos,
 .blog,
@@ -38,11 +45,13 @@ body {
   padding: 3em 0 6em 0;
 }
 
+/* line 29, layout/geral.scss */
 h2 {
   margin-top: 0;
 }
 
 /** Header **/
+/* line 2, layout/header.scss */
 header {
   border-top: 5px solid #a33a37;
   background: rgba(30, 44, 53, 0.8);
@@ -51,55 +60,67 @@ header {
   position: absolute;
 }
 @media (max-width: 980px) {
+  /* line 2, layout/header.scss */
   header {
     height: auto;
   }
+  /* line 12, layout/header.scss */
   header .container {
     position: static;
   }
+  /* line 16, layout/header.scss */
   header h1 {
     max-width: 50%;
     margin: 0 auto;
   }
+  /* line 20, layout/header.scss */
   header h1 img {
     max-width: 100%;
-    margin: 0.5em auto;
+    margin: .5em auto;
     display: block;
   }
 }
 
+/* line 32, layout/header.scss */
 header .container {
   position: relative;
 }
 
+/* line 36, layout/header.scss */
 .menu-principal {
   position: absolute;
   right: 0;
-  top: -0.5em;
+  top: -.5em;
   font-size: 1.2em;
   font-weight: lighter;
 }
+/* line 43, layout/header.scss */
 .menu-principal ul {
   padding-left: 0;
 }
+/* line 47, layout/header.scss */
 .menu-principal li {
   display: inline-block;
   width: 5em;
 }
+/* line 52, layout/header.scss */
 .menu-principal a {
   color: white;
   text-decoration: none;
 }
+/* line 56, layout/header.scss */
 .menu-principal a:hover {
   text-decoration: underline;
 }
 @media (max-width: 980px) {
+  /* line 36, layout/header.scss */
   .menu-principal {
     position: static;
     display: block;
     text-align: center;
     width: auto;
   }
+  /* line 68, layout/header.scss */
   .menu-principal li {
     margin: 0.4em;
     width: auto;
@@ -107,6 +128,7 @@ header .container {
 }
 
 /** Destaque **/
+/* line 2, layout/destaque.scss */
 .destaque {
   background: url(../imagens/destaque.jpg) center bottom repeat-x;
   -webkit-background-size: cover;
@@ -116,32 +138,37 @@ header .container {
   padding-top: 10em;
 }
 @media (max-width: 980px) {
+  /* line 2, layout/destaque.scss */
   .destaque {
     font-size: 14px;
     height: 250px;
   }
 }
 
+/* line 15, layout/destaque.scss */
 .destaque p {
   width: 30em;
 }
 
+/* line 19, layout/destaque.scss */
 .destaque p:first-child {
   width: 30em;
   font-size: 1.3em;
   line-height: 1.1;
 }
 
+/* line 25, layout/destaque.scss */
 .destaque p:first-child:first-line {
   font-size: 2.2em;
   font-weight: bold;
 }
 
+/* line 30, layout/destaque.scss */
 .destaque button {
   margin-top: 1em;
   background: #a33a37;
   border: 0;
-  padding: 0.6em;
+  padding: .6em;
   font-size: 1.2em;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -150,10 +177,12 @@ header .container {
 }
 
 /** Sobre **/
+/* line 2, layout/sobre.scss */
 .sobre {
   background: #ebebeb;
 }
 
+/* line 6, layout/sobre.scss */
 .duas-colunas {
   -webkit-column-count: 2;
   -moz-column-count: 2;
@@ -161,22 +190,27 @@ header .container {
   columns: 1;
 }
 
+/* line 13, layout/sobre.scss */
 .duas-colunas h3 {
   margin: 0;
 }
 
+/* line 17, layout/sobre.scss */
 .sobre p {
-  font: 0.9em/1.8 sans-serif;
+  font: .9em/1.8 sans-serif;
 }
 
+/* line 21, layout/sobre.scss */
 .sobre p:first-child {
   margin-bottom: 3em;
 }
 
+/* line 25, layout/sobre.scss */
 .plataformas {
   padding: 0;
 }
 
+/* line 29, layout/sobre.scss */
 .plataformas li {
   display: inline-block;
   width: 50px;
@@ -185,31 +219,38 @@ header .container {
   margin: 1em 1.5em 0 0;
 }
 
+/* line 38, layout/sobre.scss */
 .plataformas li:nth-child(1) {
   background-image: url(../imagens/logo-apple.png);
 }
 
+/* line 42, layout/sobre.scss */
 .plataformas li:nth-child(2) {
   background-image: url(../imagens/logo-android.png);
 }
 
+/* line 46, layout/sobre.scss */
 .plataformas li:nth-child(3) {
   background-image: url(../imagens/logo-windows.png);
 }
 
+/* line 50, layout/sobre.scss */
 .plataformas li:nth-child(4) {
   background-image: url(../imagens/logo-blackberry.png);
 }
 
 /** Planos **/
+/* line 2, layout/planos.scss */
 .planos {
   background: #304756;
 }
 
+/* line 6, layout/planos.scss */
 .planos h2 {
   color: #FFF;
 }
 
+/* line 10, layout/planos.scss */
 .plano {
   background: white;
   width: 18em;
@@ -218,43 +259,51 @@ header .container {
   padding-bottom: 2em;
 }
 
+/* line 18, layout/planos.scss */
 .plano:hover {
   background: #dedede;
 }
 
+/* line 22, layout/planos.scss */
 .plano h3 {
   color: #FFF;
   font-size: 1.8em;
   background: #a33a37;
   text-align: center;
   height: 2em;
-  padding-top: 0.6em;
+  padding-top: .6em;
   margin-top: 0;
 }
 
+/* line 32, layout/planos.scss */
 .plano div {
   text-align: center;
   color: #a33a37;
   font-size: 2.75em;
 }
 
+/* line 38, layout/planos.scss */
 .itens-plano {
   padding-left: 1.2em;
 }
+/* line 41, layout/planos.scss */
 .itens-plano li {
   font-size: 1em;
   list-style: none;
   border-bottom: 1px solid #acacac;
-  padding: 0.5em;
+  padding: .5em;
   width: 14.8em;
 }
+/* line 48, layout/planos.scss */
 .itens-plano li:last-child {
   border: 0;
 }
+/* line 53, layout/planos.scss */
 .itens-plano span {
   float: right;
 }
 
+/* line 59, layout/planos.scss */
 .plano button {
   background: #a33a37;
   border: 0;
@@ -268,31 +317,36 @@ header .container {
   margin-left: 2em;
 }
 
+/* line 71, layout/planos.scss */
 .icone-check, .icone-x {
   background: url(../imagens/sprite.png) no-repeat;
   width: 18px;
   height: 18px;
 }
 
+/* line 77, layout/planos.scss */
 .icone-check {
   background-position: -5px -5px;
 }
 
+/* line 81, layout/planos.scss */
 .icone-x {
   background-position: -33px -5px;
 }
 
 /** Blog **/
+/* line 2, layout/blog.scss */
 .blog {
   display: block;
   position: relative;
 }
 
+/* line 7, layout/blog.scss */
 .blog::after {
   content: "";
   background: url(../imagens/fundo.png);
   background-size: 25px 25px;
-  opacity: 0.15;
+  opacity: .15;
   top: 0;
   left: 0;
   bottom: 0;
@@ -301,6 +355,7 @@ header .container {
   z-index: -1;
 }
 
+/* line 20, layout/blog.scss */
 .post-destaque,
 .posts-antigos {
   width: 48%;
@@ -308,22 +363,26 @@ header .container {
   vertical-align: top;
 }
 @media (max-width: 980px) {
+  /* line 27, layout/blog.scss */
   .post-destaque .post-destaque,
-.post-destaque .posts-antigos,
-.posts-antigos .post-destaque,
-.posts-antigos .posts-antigos {
+  .post-destaque .posts-antigos,
+  .posts-antigos .post-destaque,
+  .posts-antigos .posts-antigos {
     width: auto;
   }
 }
 
+/* line 35, layout/blog.scss */
 .post-destaque {
   margin-right: 2em;
 }
 
+/* line 39, layout/blog.scss */
 .post-destaque img {
   width: 100%;
 }
 
+/* line 43, layout/blog.scss */
 .posts-antigos a {
   text-decoration: none;
   color: black;
@@ -333,30 +392,35 @@ header .container {
   display: block;
 }
 
+/* line 52, layout/blog.scss */
 .posts-antigos a:hover {
   text-decoration: underline;
 }
 
 /** Contato **/
+/* line 2, layout/contato.scss */
 .contato input,
 .contato button {
   display: block;
 }
 
+/* line 7, layout/contato.scss */
 form {
   margin: 0 auto;
   width: 50%;
 }
 @media (max-width: 980px) {
+  /* line 12, layout/contato.scss */
   form form {
     width: auto;
   }
 }
 
+/* line 19, layout/contato.scss */
 .contato input,
 textarea {
   width: 100%;
-  margin-bottom: 0.8em;
+  margin-bottom: .8em;
   padding: 4px 8px;
   -webkit-border-radius: 0.3em;
   -moz-border-radius: 0.3em;
@@ -364,6 +428,7 @@ textarea {
   border: 2px solid #ccc;
 }
 
+/* line 28, layout/contato.scss */
 .contato button {
   margin: 0 auto;
   background: #a33a37;
@@ -378,15 +443,17 @@ textarea {
 }
 
 /** Footer **/
+/* line 2, layout/footer.scss */
 footer {
   display: block;
   position: relative;
 }
 
+/* line 7, layout/footer.scss */
 footer::after {
   content: "";
   background: url(../imagens/fundo-rodape.png);
-  opacity: 0.02;
+  opacity: .02;
   top: 0;
   left: 0;
   bottom: 0;
@@ -395,6 +462,7 @@ footer::after {
   z-index: -1;
 }
 
+/* line 19, layout/footer.scss */
 footer::before {
   content: "";
   background: #304756;
@@ -406,50 +474,60 @@ footer::before {
   z-index: -1;
 }
 
+/* line 30, layout/footer.scss */
 footer .container {
   padding-top: 3em;
   height: 6.5em;
   position: relative;
 }
 
+/* line 36, layout/footer.scss */
 footer .container img {
   width: 250px;
 }
 
+/* line 40, layout/footer.scss */
 .menu-rodape,
 .social {
   position: absolute;
 }
 
+/* line 45, layout/footer.scss */
 .menu-rodape ul li {
   display: inline-block;
   margin-left: 2em;
 }
 
+/* line 50, layout/footer.scss */
 .menu-rodape {
   top: 1em;
   right: 0;
 }
 
+/* line 55, layout/footer.scss */
 .social {
   bottom: 0;
   right: 0;
 }
 
+/* line 60, layout/footer.scss */
 .menu-rodape li,
 .social li {
   display: inline;
 }
 
+/* line 65, layout/footer.scss */
 footer a {
   color: #FFF;
   text-decoration: none;
 }
 
+/* line 70, layout/footer.scss */
 .social li {
   float: left;
 }
 
+/* line 74, layout/footer.scss */
 .social li a {
   display: block;
   width: 55px;
@@ -457,21 +535,23 @@ footer a {
   margin-left: 1em;
 }
 
+/* line 82, layout/footer.scss */
 .social a {
   background-position: top;
   background-size: 50px 50px;
 }
 
-.social a[href*=facebook] {
+/* line 87, layout/footer.scss */
+.social a[href*="facebook"] {
   background-image: url(../imagens/facebook.png);
 }
 
-.social a[href*=twitter] {
+/* line 91, layout/footer.scss */
+.social a[href*="twitter"] {
   background-image: url(../imagens/twitter.png);
 }
 
-.social a[href*=instagram] {
+/* line 95, layout/footer.scss */
+.social a[href*="instagram"] {
   background-image: url(../imagens/instagram.png);
 }
-
-/*# sourceMappingURL=estilos.css.map */
