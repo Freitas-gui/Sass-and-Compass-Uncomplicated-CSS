@@ -16,3 +16,12 @@
     background-repeat: no-repeat;
   }
   
+  ///////////
+  
+  @import "compass/css3/border-radius";
+  @import "compass/css3";
+  @function multiplica-pela-fonte-padrao($value){
+    @return $value * $tamanho-da-fonte-pardao;
+  }
+
+
